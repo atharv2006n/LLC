@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card glass">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>🎯 Guess the Number</h1>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </div>
+
+        <!-- Difficulty -->
+        <div class="difficulty-selector">
+            <label for="difficultySelect">Difficulty</label>
+            <select id="difficultySelect">
+                <option value="easy">🟢 Easy (1–10)</option>
+                <option value="medium">🟡 Medium (1–50)</option>
+                <option value="hard">🔴 Hard (1–100)</option>
+            </select>
+        </div>
+
+        <!-- Input -->
+        <div class="input-section">
+            <input type="number" id="guessInput" placeholder="Enter your guess..." min="1">
+            <button id="submitBtn" class="primary-btn">Guess</button>
+        </div>
+
+        <!-- Feedback -->
+        <div class="feedback-section">
+            <p id="feedback" class="feedback-text">Start guessing! 🤔</p>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-box">
+                <span>Attempts Left</span>
+                <p id="attemptsLeft">--</p>
+            </div>
+            <div class="stat-box">
+                <span>Score</span>
+                <p id="scoreDisplay">0</p>
+            </div>
+        </div>
+
+        <!-- Badges -->
+        <div class="badges-section">
+            <h3>🏆 Badges</h3>
+            <div id="badgesContainer" class="badges-container"></div>
+        </div>
+
+        <!-- Replay -->
+        <button id="resetBtn" class="reset-btn">🔄 Play Again</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
