@@ -1,0 +1,116 @@
+/* 🌈 NEW GLOBAL BACKGROUND */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 🌙 DARK MODE */
+body.dark {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* 🧊 CARD */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    max-width: 450px;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+/* 🌙 DARK CARD */
+body.dark .card {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* 🎯 TITLE */
+h1 {
+    color: #ffffff;
+}
+
+/* 🔘 BUTTONS */
+button {
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 12px 5px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 122, 24, 0.5);
+}
+
+/* 🌙 DARK BUTTON */
+body.dark button {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+/* 🎛 INPUT */
+input[type="number"] {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 8px;
+}
+
+body.dark input[type="number"] {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* 📊 SCORE BOXES */
+#attemptsLeft,
+#scoreDisplay {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 8px;
+}
+
+/* 💬 FEEDBACK */
+#feedback {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-left: 4px solid #00ffcc;
+}
+
+/* ✅ CORRECT */
+#feedback.correct {
+    border-left-color: #00ff88;
+}
+
+/* ❌ WRONG */
+#feedback.wrong {
+    border-left-color: #ff4d4d;
+}
+
+/* 🏆 BADGES */
+.badge {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.badge.earned {
+    background: linear-gradient(135deg, #00ffcc, #00c9a7);
+    color: #003333;
+}
+
+/* 🔔 NOTIFICATION */
+.badge-notification {
+    background: linear-gradient(135deg, #00c9a7, #92fe9d);
+    color: #003333;
+}
